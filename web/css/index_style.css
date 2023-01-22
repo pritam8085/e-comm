@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: e_comm;
+    src: url(../custom-font/e_comm_custom_font.ttf);
+}
+body{
+    font-family: e_comm;
+    letter-spacing: 1.1px;
+    overflow-x: hidden;
+}
+/* *** Footer starts *** */
+.footer-section{
+    background-color: #f5e9c8;
+    padding: 25px 0px 2px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.footer-section .our_services ul li,.footer-section .help ul li, .footer-section .top_categories ul li{
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.footer-section .our_services ul li:hover,.footer-section .help ul li:hover, .footer-section .top_categories ul li:hover{
+    cursor: pointer;
+    color: #ad7189;
+}
+.footer-section .our_services ul,.footer-section .help ul, .footer-section .top_categories ul{
+   padding-left: 0%;
+   margin-top: 12px;
+   display: block;
+   list-style-type: none;
+}
+.footer-section .our_services h5, .footer-section .help h5, .footer-section .top_categories h5,.footer-section .social_media h5{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.footer-section .social_media h4{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer-section .social_media .social_media_icons{
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}
+.footer-section .social_media .social_media_icons li{
+    display: inline-block;
+    margin: 5px;
+}
+.footer-section .social_media .social_media_icons li img{
+    width: 30px;
+    margin: auto;
+    display: block;
+    /* filter: invert(21%) sepia(70%) saturate(5912%) hue-rotate(268deg) brightness(92%) contrast(93%); */
+    filter: invert(54%) sepia(13%) saturate(1076%) hue-rotate(284deg) brightness(89%) contrast(85%);
+}
+.footer-section .footer-section-inner .footer-section-inner-image img{
+    width: 50px;
+    margin: auto;
+    display: block;
+    filter: invert(54%) sepia(13%) saturate(1076%) hue-rotate(284deg) brightness(89%) contrast(85%);
+}
+.footer-section-inner .footer-section-inner-description .footer-section-inner-description-heading h6{
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-section-inner .footer-section-inner-description p{
+    font-size: 14px;
+}
+.footer-bottom .footer-bottom-inner{
+    text-align: center;
+}
+.footer-bottom .footer-bottom-inner a{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* **Footer Ends *** */
+
+/* ***sign in /sign up starts *** */
+.sign_in .sign_in_inner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sign_in .sign_in_inner label,.sign_up .sign_up_inner label{
+    font-size: 18px;
+    color: black;
+}
+.sign_in .sign_in_inner input,.sign_up .sign_up_inner input{
+    transition: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0%;
+    box-shadow: none;
+}
+
+.sign_in .sign_in_inner .sign_in_form button ,.sign_up .sign_up_inner .sign_up_form button{
+   background-color: #f3d789;
+   font-weight: bold;
+   border-radius: 20px;
+}
+.sign_in .sign_in_inner .sign_in_form button:hover, .sign_up .sign_up_inner .sign_up_form button:hover{
+    background-color: #ad7189;
+    color: white;
+}
+.sign_in_form{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 448px;
+    min-width: 320px;
+    height: auto;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.sign_in .sign_in_logo ,.sign_up .sign_up_logo {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.sign_in ,.sign_up{
+    display: flex;
+    height: 100vh;
+}
+.not_reg{
+    flex-direction: column;
+    align-items: center;
+}
+.not_reg a{
+    text-decoration: none;
+    color: #ad7189;
+}
+.sign_up .side-image img{
+   /* height: 50px; */
+   /*  */
+   margin-top: 30vh;
+}
+@media (min-width:310px) and (max-width:767px) {
+    .sign_up .side-image img{
+        margin-top: auto;
+        margin-bottom: 20px;
+        width: 100px;
+    }
+}
+/* ***sign in /sign up ends***  */
